@@ -1,0 +1,53 @@
+<div id="stack-background">
+	<div class="row text-center">
+		<div class="col-md-3">
+			<img class="img-fluid rounded" src="image/leftbannerimg.jpg" alt="">
+		</div>
+		<div class="col-sm-6">
+			<div class="card">
+				<h2>Suggest a New Ride</h2>
+				<p class="text-white">Please provide your name, e-mail and a description of your
+					ride. Clicking submit will send your suggestion to us</p>
+				<form action="https://api.web3forms.com/submit" method="POST">
+				
+					<input type="hidden" name="access_key" value="04f2e944-562a-4f46-9957-8618a1d32540">
+					
+					<label class="text-white" for="fname">First name:</label>
+					<br> 
+					<input ng-model="ride.fname" type="text" id="fname" name="fname" placeholder="Harley" required>
+					<div class="invalid-feedback">Please fill out this field.</div>
+					<div class="valid-feedback">Valid.</div>
+					<br> 
+					<label class="text-white" for="lname">Last name:</label>
+					<br> 
+					<input ng-model="ride.lname" type="text" id="lname" ng-model="ride.lname" name="lname" placeholder="Davidson">
+					
+					<br> 
+					<label class="text-white" for="lname">E-mail:</label>
+					<br> 
+					<input ng-model="ride.email" type="text" id="email" name="email" placeholder="email@email.com" required>
+					<div class="invalid-feedback">Please fill out this field.</div>
+					<div class="valid-feedback">Valid.</div>
+					<br> <br>
+					<label class="text-white" for="lname">Describe Your Ride</label>
+					<div class="invalid-feedback">Please tell us about the ride you would like added.</div>
+					<div class="valid-feedback">Valid.</div>
+					<br>
+					<textarea ng-model="ride.message" name="message" rows="19" cols="75" placeholder="Enter a description of your ride with start/stop points, waypoints, and other interesting information" required></textarea>
+					<!-- TODO add file upload  -->
+					<br> <br> 
+					
+					
+					<button type="submit" class="btn btn-info">That'll do it </button>
+					<button type="button" class="btn btn-info"
+					ng-click="clear()">Clear</button>
+				</form>
+
+
+			</div>
+		</div>
+		<div class="col-md-3">
+			<img class="img-fluid rounded" src="image/rightbannerimg.jpg" alt="">
+		</div>
+	</div>
+</div>

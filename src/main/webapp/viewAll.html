@@ -1,0 +1,37 @@
+<div id="stack-background">
+ <div id="stack-background" class="card mt-3">
+	<div class="card-header bg-info">
+		<h4>See All Rides</h4>
+		<!--  <button class="btn btn-success" ng-click="getAllrides()">Refresh Rides</button>-->
+	</div>
+	<div class="card-body">
+		<table class="table table-hover">
+			<thead class="thead-light">
+				<tr>
+					<th>Title</th>
+					<th>Skill Level</th>
+					<th>Length</th>				
+					<th>Brief Desc.</th>
+									
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="ride in rides">
+					<td><a href="{{ride.link}}" target="blank">{{ride.name}}</a></td>
+					<td>{{ride.skill}}</td>
+					<td>{{ride.length}}</td>					
+					<td>{{ride.tease}}</td>	
+									
+				</tr>
+			</tbody>		
+		</table>	
+	</div>
+	<div class="card-footer bg-info">
+		Please click the link to be taken to the ride
+	</div>
+</div>
+</div>
+
+
+
+	

@@ -1,0 +1,36 @@
+@charset "ISO-8859-1";
+#stack-background {
+	background-image: url('https://img.freepik.com/free-photo/monochrome-asphalt-texture_1194-7750.jpg?w=1380&t=st=1669392094~exp=1669392694~hmac=53a2e3e779d76aed38e3052ce9dc8aab694c27cc6af554a8e52e5ce0f9d6b225');	
+	background-size: contain;
+}
+h5 {
+	background-color: #308446;
+	border:8px solid White;
+	border-radius: 8px;
+}
+.jumbo {
+	background-color: #308446;
+	border:8px solid White;
+	border-radius: 8px;
+	color: white;
+	text-align: center;
+	margin: 20px;
+  	padding: 60px;
+}
+p {
+	background-color: #308446;
+	border:8px solid White;
+	border-radius: 8px;
+}
+form {
+  background-color: #308446;
+  border: 8px solid White;
+  border-radius: 8px;
+  justify-content: center;
+}
+table {
+  background-color: #308446;
+  border: 8px solid White;
+  border-radius: 8px;
+  justify-content: center;
+}

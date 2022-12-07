@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<TITLE>ARon2</TITLE>
+<link rel="icon" type="image/x-icon" href="https://previews.123rf.com/images/ylivdesign/ylivdesign1610/ylivdesign161005262/64353575-motorcycle-icon-simple-illustration-of-motorcycle-vector-icon-for-web-design.jpg">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script
+	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="./css/ride.css"></link>
+<script src="./js/ride.js"></script>
+ <script src="./js/searchController1.js"></script>
+ <script src="./js/reportController.js"></script>
+ <script src="./js/createController.js"></script>
+</head>
+<body ng-app="rideapp">
+	<nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+		<div class="navbar-brand">
+			<a href="#!front"><img class="img-fluid rounded" src="image/arkansas-on-two-wheels-low-resolution-logo-white-on-transparent-background.png" alt="aron2wheels logo" style="width:75px;height:75pk;"></a>
+		</div>
+		<!-- Collapse button -->
+		<button class="navbar-toggler toggler-example" type="button"
+			data-toggle="collapse" data-target="#navbarSupportedContent1"
+			aria-controls="navbarSupportedContent1" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<!-- Collapsible content -->
+		<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="#!viewall">View All</a></li>
+			    <li class="nav-item"><a class="nav-link" href="#!create">Add a ride</a></li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a class="nav-link" href="#!stack">Stack</a></li>
+				<li class="nav-item"><a class="nav-link" href="#!resume">Resume</a></li>
+			</ul>
+		</div>
+	</nav>
+<!-- TODO add member log-in use bootstrap modal -->
+	<div class="container-fluid">
+		<div ng-view></div>
+	</div>
+</body>
+</html>
